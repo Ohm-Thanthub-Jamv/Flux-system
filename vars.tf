@@ -19,7 +19,7 @@ variable "zone" {
 variable "target_path" {
   description = "Relative path to the Git repository root where the sync manifests are committed."
   type = string
-  default = "./manifests"
+  default = "./cluster"
 }
 
 variable "github_owner" {
@@ -31,7 +31,7 @@ variable "github_owner" {
 variable "repository_name" {
   description = "repo name"
   type = string
-  default = "Flux-system"
+  default = "gitops"
 }
 
 variable "branch" {
@@ -61,11 +61,11 @@ variable "flux_namespace" {
 variable "github_token" {
   description = "token for github"
   type = string
-  default = "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"
+  default = "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"
 }
 
 variable "github_deploy_key_title" {
   description = "Name of github deploy key"
   type = string
-  default = "Flux-cd"
+  default = "gitops"
 }
