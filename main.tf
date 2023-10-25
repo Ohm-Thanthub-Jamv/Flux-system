@@ -40,7 +40,9 @@ provider "google" {
 provider "flux" {}
 
 data "flux_install" "main" {
+  namespace   = var.flux_namespace
   target_path = var.target_path
+  components  = var.components
 }
 
 data "flux_sync" "main" {

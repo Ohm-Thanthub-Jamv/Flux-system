@@ -61,11 +61,16 @@ variable "flux_namespace" {
 variable "github_token" {
   description = "token for github"
   type = string
-  default = "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"
+  default = " "
 }
 
 variable "github_deploy_key_title" {
   description = "Name of github deploy key"
   type = string
   default = "gitops"
+}
+
+variable "components" {
+  type = list(string)
+  default = [ "image-reflector-controller" , "image-automation-controller" ]
 }
